@@ -136,6 +136,7 @@ main {
     width:213px;
     height:40px;
     gap:10px;
+    margin-bottom: 10px;
 }
 
 .container p {
@@ -155,15 +156,17 @@ main {
 .section {
     width: 892px;
     height: 300px;
-    border: 1px red solid;
-    display: grid;
-    grid-template-columns: auto;
+
+    display:flex;
+    margin-bottom: 80px;
 }
+
 
 .finTech {
     width: 892px;
     height: 300px;
 }
+
 
 .small-btn {
     margin-top: 27px;
@@ -201,6 +204,8 @@ main {
     height:28px;
     margin-bottom: 10px;
 
+    /* display: inline-block; */
+
 }
 
 .finTech p {
@@ -213,6 +218,7 @@ main {
     color: #9C9C9C;
 
     margin-bottom: 40px;
+    /* display: inline-block; */
 }
 
 .btn {
@@ -230,18 +236,24 @@ main {
 
     color: #FFFFFF; 
     background-color: #FFA217;
-
-
 }
 
+.btn span {
+    width:5.892857074737549;
+    height: 10px;
+}
 
-.image {
+.finTech-two {
+    display:grid;
+    gap:1rem;
+    grid-auto-flow:column;
+}
+
+img {
     width:445px;
     height:300px;
-    margin-left: 447px;
     object-fit: cover;
     overflow: hidden;
-    border:red solid 1px;
 }
 
 
