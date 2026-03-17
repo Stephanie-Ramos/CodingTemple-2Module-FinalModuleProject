@@ -11,10 +11,11 @@
 /* Body */
 body {
     font-family: "IBM Plex Mono", "Roboto";
-    background-color: #080808;
+    /* background-color: #080808; */
     color: #9C9C9C; 
 }
 
+/* INDEX: Navigation Bar */
 .header {
     width: 1110px;
     height: 70px;
@@ -23,10 +24,13 @@ body {
     border-radius: 0px 0px 8px 8px;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
 .navcontainer {
     display:flex;
-    justify-content: center;
-    flex:1;
 
     width:717px;
     height:18px;
@@ -103,8 +107,142 @@ body {
     color: #9C9C9C;
 }
 
+/* CASE STUDIES */
+main {
+    width:897px;
+    height: 1242px;
+    margin: 80px 176px 80px 207px;
+    margin-left: 207px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    background: white;
+}
+
+.container h2 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: 800;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #080808;
+
+    width:213px;
+    height:40px;
+    gap:10px;
+}
+
+.container p {
+    width: 570px;
+    height: 72px;
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+
+    margin-bottom:60px;
+
+}
+
+/* CASE STUDIES: Sections */
+.section {
+    width: 892px;
+    height: 300px;
+    border: 1px red solid;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.finTech {
+    width: 892px;
+    height: 300px;
+}
+
+.small-btn {
+    margin-top: 27px;
+    margin-bottom: 20px;
+
+    width: 72px;
+    height:24px;
+    border-radius: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: "IBM Plex Mono";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1%;
+
+    
+    color: #FFA217;
+    background-color: #FFF6E9;
+
+    border:none;
+}
+
+.finTech h3 {
+    font:"Raleway";
+    font-weight: 800;
+    font-style: 800px;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #080808; 
+
+    gap: 10px;
+    width:auto;
+    height:28px;
+    margin-bottom: 10px;
+
+}
+
+.finTech p {
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    color: #9C9C9C;
+
+    margin-bottom: 40px;
+}
+
+.btn {
+    width:189.89285278320312;
+    height: 38px;
+    border-radius: 4px;
+    padding: 10px 24px;
+    border:none;
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    color: #FFFFFF; 
+    background-color: #FFA217;
 
 
+}
+
+
+.image {
+    width:445px;
+    height:300px;
+    margin-left: 447px;
+    object-fit: cover;
+    overflow: hidden;
+    border:red solid 1px;
+}
 
 
 
