@@ -1,5 +1,5 @@
  /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Reset Rule */
 * {
@@ -108,11 +108,10 @@ body {
 }
 
 /* CASE STUDIES */
-main {
+.case-studies-main {
     width:897px;
     height: 1242px;
     margin: 80px 176px 80px 207px;
-    margin-left: 207px;
 }
 
 .container {
@@ -203,9 +202,6 @@ main {
     width:auto;
     height:28px;
     margin-bottom: 10px;
-
-    /* display: inline-block; */
-
 }
 
 .finTech p {
@@ -218,7 +214,6 @@ main {
     color: #9C9C9C;
 
     margin-bottom: 40px;
-    /* display: inline-block; */
 }
 
 .btn {
@@ -256,6 +251,127 @@ img {
     overflow: hidden;
 }
 
+/* CASE STUDIES: Middle Section */
+.edTech {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+}
+
+.edTech-two {
+    margin-left: 31px;
+
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    background-color: #080808;
+}
+
+.testimonials-header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 80px;
+}
+
+.testimonials-header h2 {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: 800px;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    width: 209px;
+    height: 40px;
+
+    gap:10px;
+
+    color:#FFFFFF; 
+    margin-bottom: 10px; 
+}
+
+.testimonial-text p {
+    width:570px;
+    height:48px;
+
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+
+    margin-bottom: 60px;
+}
+
+/* TESTIMONIALS: Grid Layout */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 62px;
+}
 
 
+.testimonial-card {
+    border: white solid 1px;
+    border-radius: 10px;
 
+    width:445px;
+    height: 212px;
+
+    margin-top: 238px;
+    margin-left: 180px;
+}
+
+
+.testimonial-card p {
+    color:#9C9C9C;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+
+    width: 409px;
+    height: 72px;
+
+    margin-top:30px;
+    margin-left:30px;
+    margin-bottom:30px;
+}
+
+.client {
+    display:flex;
+    align-items:center;
+}
+
+.client img {
+    width: 50px;
+    height: 50px;
+
+    margin-left:30px;
+    margin-bottom:30px;
+}
+
+.client h3 {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: bottom;
+    color: #FFFFFF;
+
+    margin: 15px 0px 14px 20px;
+
+
+}
