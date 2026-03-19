@@ -176,7 +176,7 @@ body {
 
 .case-studies-main {
     width:897px;
-    height: auto;
+    height: fit-content;
     margin: 80px 176px 80px 207px;
 
     border:red solid 1px;
@@ -219,10 +219,14 @@ body {
 /* CASE STUDIES: Sections */
 .case {
     width: 892px;
-    height: 300px;
-
-    margin-bottom: 80px;
     display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.fintech {
+    flex:1;
+    min-width: 300px;
 }
 
 .small-btn {
@@ -256,7 +260,6 @@ body {
     color: #080808; 
 
     gap: 10px;
-    width:auto;
     height:28px;
     margin-bottom: 10px;
 }
@@ -297,14 +300,17 @@ body {
     height: 10px;
 }
 
-.fintTech {
+.finTech {
     display: grid;
     gap: 1rem;
     grid-auto-flow: column;
+    flex:1;
+    min-width:300px;
 }
 
 .finTech img {
-    width:445px;
+    width:100%;
+    max-width: 445px;
     height:300px;
     object-fit: cover;
     overflow: hidden;
@@ -497,7 +503,7 @@ body {
 }
 
 /* TESTIMONIALS: Grid Layout */
-.testimonials-grid{
+.testimonial-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
