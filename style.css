@@ -180,6 +180,7 @@ body {
     margin: 80px 176px 80px 207px;
 
     border:red solid 1px;
+
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -563,28 +564,47 @@ body {
 /* RECENT WORK: Header */
 .recent-work-container {
     background-color: white;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.recent-work {
-    max-width: 1100px;
-    margin: 150px auto;
-    text-align: center;
-}
 
 .recent-header h2 {
-    font-size: 36px;
     margin-bottom: 10px;
+    margin-top: 80px;
 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: 800px;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: bottom;
     color: #080808;
+
 }
 
 .recent-header p {
-    max-width: auto;
+    width: 570px;
     height: auto;
-    margin: 0 auto 80px;
-    line-height: 1.6;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
+
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-align: center;
     color: #9C9C9C;
 }
 
@@ -597,33 +617,74 @@ body {
 
 .project-card {
     text-align: left;
+
+    width: 445px;
+    height: auto;
+    gap: 30px;
+    margin-bottom: 80px;
 }
 
 .project-card img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 25px;
+    width: 445px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .project-card h3 {
-    font-size: 22px;
     margin-bottom: 10px;
+
+    font-family: "Raleway";
+    font-weight: 800;
+    font-style: 800px;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: #080808;
 }
 
 .project-card p {
-    color: #9C9C9C;
-    line-height: 1.6;
     margin-bottom: 25px;
+
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    color: #9C9C9C;
 }
 
 .project-btn {
-    background: #3F8E00;
+    background-color:#3F8E00;
     border: #62BA1B 1px solid;
     box-shadow: 0px 8px 30px 0px #3F8E004D;
-    padding: 14px 28px;
-    color: #FFFFFF;
-    font-size: 14px;
+
+    width: 139.89285278320312;
+    height: 38;
+    top: 456px;
+    opacity: 1;
+    gap: 10px;
     border-radius: 4px;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+
+    color: #FFFFFF;
     
     cursor: pointer;
 
