@@ -11,11 +11,7 @@
 /* Body */
 body {
     font-family: "IBM Plex Mono", "Raleway";
-    
-    /* ??? Check for accurate settings */
     background-color: #080808;
-    color: white;
-
 }
 
 /* HOME: Navigation Bar */
@@ -30,6 +26,7 @@ body {
     background-color: #1B1B1B;
     border-radius: 0px 0px 8px 8px;
 }
+
 
 .navcontainer ul {
     display: flex;
@@ -67,6 +64,8 @@ body {
 
 .hero {
     display:flex;
+    justify-content: center;
+    align-items: center;
     margin-top:80px;
 }
 
@@ -140,11 +139,16 @@ body {
 
 
 .worked-with {
-   margin-top:190px;
-   margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    margin-top:190px;
+    margin-left: 180px;
 }
 
 .worked-with p {
+    text-align: left;
     font-family: "IBM Plex Mono";
     font-weight: 400;
     font-style: normal;
@@ -153,6 +157,7 @@ body {
     letter-spacing: 0%;
 
     margin-bottom:20px;
+    color: #FFFFFF;
 }
 
 .worked-with .logos img {
@@ -238,8 +243,7 @@ body {
     width: 72px;
     height:24px;
     border-radius: 60px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 0 10px;
     font-family: "IBM Plex Mono";
     font-weight: bold;
     font-size: 12px;
@@ -249,7 +253,11 @@ body {
     color: #FFA217;
     background-color: #FFF6E9;
 
-    border:none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .fintech h3 {
@@ -504,6 +512,7 @@ body {
     gap:10px;
 
     margin-bottom: 10px; 
+    color: #FFFFFF;
 }
 
 .testimonials p {
@@ -786,6 +795,7 @@ body {
     letter-spacing: 0%;
     vertical-align: left; 
     padding-bottom: 5px;
+    color: #FFFFFF;
     
     
 }
@@ -861,4 +871,106 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #9C9C9C;
+}
+
+/* Media Queries */
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+    /* Navigation Bar */
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 0;
+        overflow-x: hidden;
+    }
+
+    .navcontainer ul {
+        gap: 20px;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-height: none;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text button {
+        width: 100%;
+    }
+
+    .hero-img img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    /* Worked With Section */
+    .worked-with {
+        align-items: center;
+        text-align: center;
+    }
+
+    .worked-with p {
+        text-align: center;
+    }
+
+    .worked-with .logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .worked-with .logos img {
+        width: 100px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    /* Case Studies Section */
+    .case {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .finTech,
+    .edTech,
+    .Pharma {
+        grid-auto-flow: row;
+    }
+
+
+    /* Testimonials Section */
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Get In Touch Section */
+    .contact-form {
+        align-items: center;
+    }
+
 }
