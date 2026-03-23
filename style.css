@@ -1039,14 +1039,19 @@ footer {
 
     }
 
-    .card {
+    .card p {
         width: 100%;
+        text-align: left;
     }
 
     /* RECENT WORK */
     .recent-header p {
         width:100%;
         text-align: center;
+    }
+
+    .project-grid {
+        width: 100%;
     }
 
     .projects {
@@ -1056,6 +1061,14 @@ footer {
 
     .project-card {
         width: 100%;
+    }
+     .project-card img {
+        width: 100%;
+    }
+    .project-btn {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Get In Touch */
