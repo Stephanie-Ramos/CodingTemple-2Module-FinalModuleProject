@@ -33,6 +33,13 @@ body {
     border-radius: 0px 0px 8px 8px;
 }
 
+/* Hamburger Icon */
+.menu-toggle {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden on desktop */
+}
 
 .navcontainer ul {
     display: flex;
@@ -894,6 +901,13 @@ footer {
         height: auto;
     }
 
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .navbar {
         width:100%;
@@ -903,6 +917,40 @@ footer {
         align-items: center;
     }
 
+    /* Hamburger Icon */
+   .menu-toggle {
+    display: block; /* Show icon only in mobile view */
+  }
+
+    /* Hide the menu by default in mobile view */
+    #menu {
+        display: none; /* Hide menu */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position relative to navbar */
+        background-color: #333; /* Same background as navbar */
+        top: 50px; /* Position below the navbar */
+        left: 0;
+        right: 0;
+        z-index: 1; /* Stay on top of other elements */
+        padding: 10px 0; /* Padding around menu items */
+    }
+
+    /* Show the menu when active */
+    #menu.active {
+        display: flex; /* Display menu */
+    }
+
+    /* Adjust the menu list for mobile */
+    #menu ul {
+        flex-direction: column; /* Stack list items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    /* Adjust menu items for mobile */
+    #menu li {
+        margin: 5px 0; /* Space between items */
+    }
+
     .navcontainer ul {
         display: flex;
         flex-direction: column;
@@ -910,11 +958,6 @@ footer {
         align-items: center;
     }
 
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     /* Hero */
     .hero-container {
@@ -1040,7 +1083,6 @@ footer {
     .edtech {
         margin-left: 0;
     }
-
 
 
     /* TESTIMONIALS */

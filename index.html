@@ -6,13 +6,23 @@
     <meta name="description" content="designing a webpage using a personal portfolio template" />
     <meta name="author" content="Stephanie Ramos" />
     <title>Final Module Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" class="stylesheet" />
   </head>
 
     <body>
         <!--Header Section -->
         <header class="header">
-            <div class="navbar">
+            <!-- Hamburger Icon for Mobile View -->
+            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+            <!-- JavaScript for Toggling the Menu -->
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("menu");
+                    menu.classList.toggle("active");
+                    }
+            </script>
+            <div id="menu" class="navbar">
                 <!-- Middle Section -->
                 <nav class="navcontainer">
                     <ul>
