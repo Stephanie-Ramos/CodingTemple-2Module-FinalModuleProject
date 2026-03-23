@@ -11,10 +11,13 @@
 /* Body */
 body {
     font-family: "IBM Plex Mono", "Raleway";
-    background-color: #080808;
 }
 
 /* HOME: Navigation Bar */
+.header {
+    background-color: #080808;
+}
+
 .navbar {
     display:flex;
     justify-content: space-between;
@@ -57,6 +60,7 @@ body {
 
 /* Hero */
 .hero-container {
+    background-color: #080808;
     justify-content:space-between;
     align-items: center;
     padding: 80px;
@@ -510,7 +514,7 @@ body {
     height: 40px;
 
     gap:10px;
-
+    margin-top: 80px;
     margin-bottom: 10px; 
     color: #FFFFFF;
 }
@@ -877,4 +881,189 @@ footer {
 /* Media Queries */
 /* Mobile Device */
 @media screen and (max-width: 576px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .navbar {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navcontainer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Hero */
+    .hero-container {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-text p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-text button {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-img  img {
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Worked With */
+    .worked-with {
+        margin-left: 0;
+    }
+
+    .worked-with p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .worked-with .logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .worked-with .logos img {
+        margin-right: 0;
+    }
+
+
+
+    /* CASE STUDIES */
+    .case-studies-main {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .case-studies-main p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .case {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+
+    }
+
+    .case h3 {
+        text-align: left;
+        margin: 0 0 0 0;
+    }
+
+    .case p {
+        text-align: left;
+    }
+
+    .case .btn {
+        margin-top: 50px;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* TESTIMONIALS */
+    .testimonials p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:2px;
+
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* RECENT WORK */
+    .recent-header p {
+        width:100%;
+        text-align: center;
+    }
+
+    .projects {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    /* Get In Touch */
+    .touch-header p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+   
 }
